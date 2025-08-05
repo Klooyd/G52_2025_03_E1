@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 
 
-namespace PackagePuntos
+namespace packagePuntos
 {
     [Serializable]
 

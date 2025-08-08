@@ -1,23 +1,20 @@
 using UnityEngine;
 using System;
+using UnityEditor.Animations;
 
 namespace packagePersona
 {
     [Serializable]
     public class Estudiante : Persona
     {
-        private string codeE;
-        private string nameCarreraE;
+        public string codeE;
+        public string nameCarreraE;
 
-        public Estudiante()
-        {
-        }
-
+        public Estudiante() { }
         public Estudiante(string codeE, string nameCarreraE, string nameP, string mailP, string dirP)
             : base(nameP, mailP, dirP)
         {
-            this.codeE = codeE;
-            this.nameCarreraE = nameCarreraE;
+            this.codeE = codeE; this.nameCarreraE = nameCarreraE;
         }
 
         public string CodeE { get => codeE; set => codeE = value; }
